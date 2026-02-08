@@ -24,7 +24,7 @@ def gemini_analiz(user_text):
     response = model.generate_content(prompt)
     return json.loads(response.text.replace('```json', '').replace('```', '').strip())
 
-# --- 2. SELENIUM AYARLARI ---
+
 def driver_kur():
     chrome_options = Options()
     # chrome_options.add_argument("--headless") # Arka planda çalışsın istersen bunu aç (ama bazen yakalanır)
